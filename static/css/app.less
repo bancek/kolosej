@@ -1,0 +1,60 @@
+@import "bootstrap/bootstrap.less";
+@import "lib/fullcalendar.less";
+@import "lib/jquery-ui.less";
+
+#main {
+  padding: 20px 0;
+}
+
+.calendar {
+  position: relative;
+
+  .filters {
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 10px;
+
+      select {
+        margin: 0 5px;
+        padding: 0;
+      }
+    }
+  }
+
+  .fc-state-highlight {
+    background: transparent;
+  }
+}
+
+.movie-details {
+  width: 700px;
+  margin-left: -350px;
+
+  .title {
+    margin: 0;
+    line-height: 36px;
+
+    .year {
+      font-weight: normal;
+    }
+  }
+
+  .original-title {
+    margin: 0 0 10px;
+    font-weight: normal;
+  }
+
+  .duration {
+    float: right;
+  }
+
+  .poster {
+    float: right;
+    margin: 0 0 0 15px;
+  }
+}
